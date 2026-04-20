@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Counter1 from './components/counter1/Counter1';
 import Counter2 from './components/counter2/Counter2';
+import Counter3 from './components/counter3/Counter3';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       </form> */}
       <Counter1/>
       <Counter2/>
+      <Counter3/>
     </div>
   );
 };

@@ -1,17 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import useCounter from '../../hooks/useCounter';
 
 const Counter1 = () => {
-  const [counter, setCounter] = useState(0)
-  
-  const handleCount = ()=>{
-    const newCount = counter + 1
-    setCounter(newCount)
-  }
-  const handleCount2=()=>{
-    const newCount =counter - 1
-    setCounter(newCount)
-  }
-
+  const [counter, handleCount, handleCount2] = useCounter(5)
   return (
     <div>
       <h1 className='text-2xl font-bold'>{counter}</h1>
