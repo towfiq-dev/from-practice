@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Counter1 from './components/counter1/Counter1';
+import Counter2 from './components/counter2/Counter2';
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
 
       <input className='btn text-[17px] font-semibold' type="submit" value="Submit" name='' id=""/>
       </form> */}
+      <Counter1/>
+      <Counter2/>
     </div>
   );
 };
